@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>Personal Information</legend>
+        Name:
+        <input
+          type="text"
+          name=""
+          id=""
+          minlength="3"
+          maxlength="20"
+          required
+        />
+        <br />Email:
+        <input type="email" name="" id="" required />
+        <br />Age <input type="number" name="" id="" required /> <br />DOB:
+        <input type="date" name="" id="" required />
+        <br />Gender:<label for="male">Male</label
+        ><input type="radio" name="gender" checked id="male" />
+        <label for="female">Female</label
+        ><input type="radio" name="gender" id="female" /> <br />Address:
+        <textarea name="" id="" cols="20" rows="3"></textarea>
+      </fieldset>
+      <fieldset>
+        <legend>Professional Information</legend>
+        <br />City:
+        <select name="" id="" required>
+          <option value="">Rajkot</option>
+          <option value="">Baroda</option>
+          <option value="">Surat</option>
+          <option value="">Ahmedabad</option>
+        </select>
+
+        <br />College name:
+        <input type="text" name="" id="" required list="college-list" />
+
+        <datalist id="college-list">
+          <option value="Atmiya">Atmiya University</option>
+          <option value="Marwadi">Marwadi University</option>
+          <option value="Darshan">Darshan University</option>
+          <option value="Saurastra">Saurastra University</option>
+        </datalist>
+        <br />Marks: <input type="text" name="" id="" required /> <br />Hobby:
+        <label for="coding">Coding</label
+        ><input type="checkbox" name="" id="coding" checked />
+        <label for="reading">Reading</label
+        ><input type="checkbox" name="" id="reading" />
+        <label for="gaming">Gaming</label
+        ><input type="checkbox" name="" id="gaming" />
+      </fieldset>
+      <button>Submit</button>
+      <input type="reset" name="" id="" />
+    </form>
+  </body>
+</html>
