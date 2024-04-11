@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* universal selector */
+      * {
+        font-weight: 600;
+      }
+      /* tag selector */
+      div {
+        color: yellowgreen;
+      }
+      p {
+        color: turquoise;
+      }
+      /* class selector */
+      .deep-class {
+        color: tomato;
+      }
+      .bg-lightgrey {
+        background-color: lightgrey;
+      }
+      /* id selector */
+      #sanajay-id {
+        color: brown;
+      }
+
+      /* combinator selector */
+      div.second {
+        color: blueviolet;
+      }
+
+      /* group selector */
+      p,
+      .deep-class,
+      #sanjay-id {
+        border: 1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="deep-class bg-lightgrey">Deep</div>
+    <div>Safil</div>
+
+    <p class="bg-lightgrey">Jay</p>
+    <i class="deep-class">Dev</i>
+
+    <br /><u id="sanajay-id" class="bg-lightgrey">Sanjay</u>
+
+    <br /><strike class="second">Ajay</strike>
+
+    <div>This is first div</div>
+    <div class="second">This is second div</div>
+    <div>This is third div</div>
+  </body>
+</html>
