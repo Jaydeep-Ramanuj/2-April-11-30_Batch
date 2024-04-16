@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        font-size: 20px;
+      }
+
+      .grand-parent {
+        height: 400px;
+        /* width: 400px; */
+        background-color: yellowgreen;
+        font-size: 42px;
+      }
+      .parent {
+        height: 300px;
+        /* width: 300px; */
+        background-color: violet;
+
+        font-size: 2em;
+      }
+      .child {
+        height: 100px;
+        /* width: 100px; */
+        background-color: tomato;
+
+        /* absolute font size */
+        /* font-size: 32px; */
+
+        /* relative font size to immediate parent */
+        /* font-size: 2em; */
+        /* font-size: 2.2em; */
+        /* font-size: 0.8em; */
+
+        /* relative font size to root parent (html) */
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grand-parent">
+      Grand Parent
+      <div class="parent">
+        Parent
+        <div class="child">Deep</div>
+      </div>
+    </div>
+  </body>
+</html>
