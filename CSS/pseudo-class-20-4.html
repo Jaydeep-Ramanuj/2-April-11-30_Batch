@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 500px;
+        height: 500px;
+        background-color: yellowgreen;
+        margin: 50px auto;
+        transition: all 600ms;
+        /* box-shadow: -10px -10px 3px 5px rgba(255, 7, 53, 0.565); */
+        /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
+      }
+      .box:hover {
+        /* border-radius: 24px; */
+        /* background-color: violet; */
+        transform: translateY(-10px);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+      }
+
+      input:focus {
+        background-color: lightgray;
+      }
+
+      #check:checked {
+        outline: 5px solid red;
+      }
+
+      input {
+        color: red;
+      }
+
+      input::placeholder {
+        color: red;
+      }
+
+      .box::before {
+        content: '********';
+      }
+      .box::after {
+        content: '--------';
+        color: red;
+        background-color: purple;
+      }
+      li {
+        list-style-type: none;
+      }
+      li::before {
+        /* content: '\21A6'; */
+        content: '\269D';
+      }
+
+      li::after {
+        content: '\2726';
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" name="" id="" placeholder="Enter your name" />
+    <input type="checkbox" name="" id="check" />
+    <div class="box">Deep</div>
+
+    <ul>
+      <li>Safil</li>
+      <li>Deep</li>
+      <li>Jay</li>
+    </ul>
+  </body>
+</html>
